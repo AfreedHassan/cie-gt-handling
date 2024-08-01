@@ -5,9 +5,10 @@ from sys import argv
 
 
 def download_pdf_files(code:str, year:str) -> list[str]:
-    """Download PDF from given URL to local directory.
+    """Download all gt files of the subject with the given subject code from the given year.
 
-    :param url: The url of the PDF file to be downloaded
+    :param code: subject code of subject
+    :param year: two-digit year from which gts are to be downlaoded
     :return: True if PDF file was successfully downloaded, otherwise False.
     """
     with open("subjectInfo.json", 'r') as f:
